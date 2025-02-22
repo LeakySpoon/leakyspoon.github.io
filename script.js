@@ -397,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { "text": "Саркоидоз", "correct": false },
             { "text": "Метастазы в лёгкие", "correct": false },
             { "text": "Фиброз лёгких", "correct": false },
-            { "text": "Туберкулёз", "correct": true },
+            { "text": "Туберкулёз", "correct": true }
         ],
         "hint": "Туберкулёз характеризуется очаговыми изменениями в верхних долях лёгких, возможны кальцинаты, каверны, усиление лёгочного рисунка."
     },
