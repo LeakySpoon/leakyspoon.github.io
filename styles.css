@@ -120,7 +120,7 @@ footer {
     margin-top: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
     .container {
         padding: 15px;
     }
