@@ -127,7 +127,7 @@ footer {
     margin-top: 40px;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 768px) {
     .container {
         padding: 15px;
     }
@@ -146,9 +146,14 @@ footer {
         /*display: block;*/
         margin-bottom: 10px;
     }
+    .two-columns{
+        flex-direction: column;
+    }
     .column.left,
     .column.right {
-        flex: 0 0 100%;
+        flex: none;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
