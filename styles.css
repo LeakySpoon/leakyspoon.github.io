@@ -85,6 +85,7 @@ p{
     border-collapse: collapse;
     margin-top: 15px;
     border: 1px solid #ccc;
+    table-layout: fixed;
 }
 
 .info-table th,
@@ -92,6 +93,8 @@ p{
     text-align: left;
     padding: 10px;
     border: 1px solid #ccc;
+    width: 33.3%;
+    /*white-space: nowrap;*/
 }
 
 .info-table th {
@@ -131,12 +134,12 @@ footer {
     }
 
     .info-table th, .info-table td {
-        display: block;
+        /*display: block;*/
         width: 100%;
     }
 
     .info-table tr {
-        display: block;
+        /*display: block;*/
         margin-bottom: 10px;
     }
     .column.left,
@@ -160,9 +163,9 @@ footer {
     /*min-width: 240px;*/
 }
 
-.column hr {
-    margin: 5px 0 10px;
-}
+/*.column hr {*/
+/*    margin: 5px 0 10px;*/
+/*}*/
 
 h5 {
     font-size: 1.05rem;
@@ -177,4 +180,9 @@ h5 {
     border-radius: 4px;
     font-size: 0.9rem;
     font-weight: bold;
+}
+.table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
 }
