@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 15px;
+  background: #f4f4f4;
+  color: #000;
+  transition: background 0.3s, color 0.3s;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #45a049;
+}
+
+#progress-container {
+  width: 100%;
+  height: 24px;
+  background: #ddd;
+  border-radius: 12px;
+  margin: 10px 0 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0;
+  background: #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: width 0.3s;
+}
+
+#progress-text {
+  font-size: 14px;
+  z-index: 2;
+}
+
+.task {
+  background: #fff;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  transition: border-left 0.3s, background 0.3s;
+}
+
+.task h3 {
+  cursor: pointer;
+  margin: 0;
+}
+
+.subtasks {
+  margin-top: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.3s;
+}
+
+.task.open .subtasks {
+  max-height: 500px;
+  padding-top: 8px;
+}
+
+.subtask {
+  display: block;
+  margin: 5px 0;
+}
+
+.add-subtask {
+  margin-top: 8px;
+}
+
+#add-task {
+  margin-top: 20px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#add-task input {
+  padding: 6px;
+  width: 60%;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* ==== ТЁМНАЯ ТЕМА ==== */
+body.dark {
+  background: #1e1e1e;
+  color: #f5f5f5;
+}
+
+body.dark .task,
+body.dark #add-task {
+  background: #2c2c2c;
+  color: #f5f5f5;
+}
+
+body.dark #progress-container {
+  background: #444;
+}
+
+body.dark button {
+  background: #888;
+}
+body.dark button:hover {
+  background: #aaa;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 8px;
+    font-size: 14px;
+  }
+}
