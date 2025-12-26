@@ -1,0 +1,52 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Подготовить отчет",
+      "subtasks": [
+        {
+          "id": 101,
+          "title": "Собрать данные",
+          "done": true
+        },
+        {
+          "id": 102,
+          "title": "Сверстать таблицы",
+          "done": true
+        },
+        {
+          "id": 103,
+          "title": "Сделать выводы",
+          "done": true
+        },
+        {
+          "id": 104,
+          "title": "1",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Подготовить презентацию",
+      "subtasks": [
+        {
+          "id": 201,
+          "title": "Создать слайды",
+          "done": true
+        },
+        {
+          "id": 202,
+          "title": "Добавить графики",
+          "done": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "FF",
+      "done": false,
+      "subtasks": []
+    }
+  ]
+}
